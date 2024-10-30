@@ -3,6 +3,7 @@ package com.example.p5
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -52,6 +53,7 @@ fun MainScreen(
         horizontalAlignment = Alignment.CenterHorizontally
 
     ) {
+        Spacer(modifier = Modifier.size(25.dp))
         Text(text = "Data Diri")
 
         OutlinedTextField(
@@ -135,7 +137,7 @@ fun MainScreen(
             Text("Simpan Data")
         }
 
-        Card(modifier = Modifier.size(height = 200.dp, width = 350.dp)) {
+        Card(modifier = Modifier.size(height = 200.dp, width = 400.dp)) {
             Column {
                 CardSection(judulParam = "Nama", isiParam = namaUser)
                 CardSection(judulParam = "Jenis Kelamin", isiParam = selectedGenderUser)
